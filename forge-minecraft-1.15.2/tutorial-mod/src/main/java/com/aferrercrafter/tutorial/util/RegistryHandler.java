@@ -7,6 +7,7 @@ import com.aferrercrafter.tutorial.blocks.Oven;
 import com.aferrercrafter.tutorial.blocks.RubyBlock;
 import com.aferrercrafter.tutorial.blocks.RubyOre;
 import com.aferrercrafter.tutorial.items.ItemBase;
+import com.aferrercrafter.tutorial.items.PoisonApple;
 import com.aferrercrafter.tutorial.tools.ModItemTier;
 import net.minecraft.block.Block;
 import net.minecraft.inventory.EquipmentSlotType;
@@ -27,6 +28,7 @@ public class RegistryHandler {
 
     // Items
     public static final RegistryObject<Item> RUBY = ITEMS.register("ruby", ItemBase::new);
+    public static final RegistryObject<PoisonApple> POISON_APPLE = ITEMS.register("poison_apple", PoisonApple::new);
 
     // Tools
     public static final RegistryObject<SwordItem> RUBY_SWORD = ITEMS.register("ruby_sword", () -> new SwordItem(ModItemTier.RUBY, 2, -2.4f, new Item.Properties().group(Tutorial.CREATIVE_TAB)));

@@ -1,7 +1,6 @@
 package com.aferrercrafter.tutorial;
 
 import com.aferrercrafter.tutorial.util.RegistryHandler;
-import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;

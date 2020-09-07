@@ -13,5 +13,6 @@
   "block.tutorial.ruby_block" : "Block of Ruby",
   "block.tutorial.ruby_ore" : "Ore of Ruby",
   "block.tutorial.oven" : "Stonefire Oven",
+  "entity.tutorial.hog" : "Hog",
   "itemGroup.tutorialTab" : "Tutorial"
 }

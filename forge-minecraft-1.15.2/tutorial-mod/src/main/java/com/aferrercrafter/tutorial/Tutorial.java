@@ -1,6 +1,7 @@
 package com.aferrercrafter.tutorial;
 
 import com.aferrercrafter.tutorial.init.ModBlocks;
+import com.aferrercrafter.tutorial.init.ModEntityTypes;
 import com.aferrercrafter.tutorial.init.ModItems;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -26,6 +27,7 @@ public class Tutorial
 
         ModItems.init();
         ModBlocks.init();
+        ModEntityTypes.init();
 
         MinecraftForge.EVENT_BUS.register(this);
     }

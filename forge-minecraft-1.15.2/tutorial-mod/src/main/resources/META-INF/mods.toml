@@ -17,7 +17,7 @@ updateJSONURL="http://myurl.me/" #optional
 
 displayURL="http://example.com/" #optional
 
-logoFile="examplemod.png" #optional
+logoFile="logo.png" #optional
 
 credits="Thanks for this example mod goes to Java" #optional
 

@@ -3,6 +3,7 @@ package com.aferrercrafter.tutorial.util;
 import com.aferrercrafter.tutorial.Tutorial;
 import com.aferrercrafter.tutorial.armor.ModArmorMaterial;
 import com.aferrercrafter.tutorial.blocks.BlockItemBase;
+import com.aferrercrafter.tutorial.blocks.Oven;
 import com.aferrercrafter.tutorial.blocks.RubyBlock;
 import com.aferrercrafter.tutorial.blocks.RubyOre;
 import com.aferrercrafter.tutorial.items.ItemBase;
@@ -43,8 +44,10 @@ public class RegistryHandler {
     // Blocks
     public static final RegistryObject<Block> RUBY_BLOCK = BLOCKS.register("ruby_block", RubyBlock::new);
     public static final RegistryObject<Block> RUBY_ORE = BLOCKS.register("ruby_ore", RubyOre::new);
+    public static final RegistryObject<Block> OVEN = BLOCKS.register("oven", Oven::new);
 
     // Blocks Items
     public static final RegistryObject<Item> RUBY_BLOCK_ITEM = ITEMS.register("ruby_block", () -> new BlockItemBase(RUBY_BLOCK.get()));
     public static final RegistryObject<Item> RUBY_ORE_ITEM = ITEMS.register("ruby_ore", () -> new BlockItemBase(RUBY_ORE.get()));
+    public static final RegistryObject<Item> OVEN_ITEM = ITEMS.register("oven", () -> new BlockItemBase(OVEN.get()));
 }

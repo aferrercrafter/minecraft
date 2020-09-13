@@ -1,5 +1,6 @@
 {
   "item.tutorial.ruby" : "Ruby",
+  "item.tutorial.ruby_sword" : "Ruby Sword",
   "block.tutorial.ruby_block" : "Block of Ruby",
   "itemGroup.tutorialTab" : "Tutorial"
 }

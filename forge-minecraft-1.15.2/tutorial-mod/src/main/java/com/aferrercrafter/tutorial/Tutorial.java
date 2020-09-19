@@ -1,5 +1,6 @@
 package com.aferrercrafter.tutorial;
 
+import com.aferrercrafter.tutorial.util.RegistryHandler;
 import net.minecraft.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
@@ -15,10 +16,13 @@ public class Tutorial
 {
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
+    public static final String MOD_ID = "tutorial";
 
     public Tutorial() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
+
+        RegistryHandler.init();
 
         MinecraftForge.EVENT_BUS.register(this);
     }

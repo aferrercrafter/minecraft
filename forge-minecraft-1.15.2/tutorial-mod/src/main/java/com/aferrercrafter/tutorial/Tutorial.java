@@ -38,7 +38,7 @@ public class Tutorial
     }
 
     // Creates Custom Tab
-    public static final ItemGroup TAB = new ItemGroup("tutorialTab") {
+    public static final ItemGroup CREATIVE_TAB = new ItemGroup("tutorialTab") {
         @Override
         public ItemStack createIcon() {
             return new ItemStack(RegistryHandler.RUBY.get());

@@ -2,6 +2,7 @@ package com.aferrercrafter.tutorial.events;
 
 import com.aferrercrafter.tutorial.Tutorial;
 import com.aferrercrafter.tutorial.util.RegistryHandler;
+import net.minecraft.client.gui.screen.inventory.CraftingScreen;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.passive.SheepEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -12,6 +13,7 @@ import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.client.event.GuiOpenEvent;
 import net.minecraftforge.event.entity.living.LivingEvent;
 import net.minecraftforge.event.entity.player.AttackEntityEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -44,6 +46,16 @@ public class ModClientEvents {
                         player.sendMessage(new StringTextComponent(TextFormatting.RED + "That sheep isn't filling so well.."));
                 }
             }
+    }
+
+    @SubscribeEvent
+    public static void onCraftingTableOpen(GuiOpenEvent event){
+        if(event.isCancelable()){
+            if(event.getGui() instanceof CraftingScreen){
+                event.setCanceled(true);
+                Tutorial.LOGGER.info("Player tried to open a crafting table... what a fool");
+            }
+        }
     }
 
 }

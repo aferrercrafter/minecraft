@@ -40,7 +40,7 @@
 }
 ```
 
-### Loot Table
+# Loot Table
 
 #### Basic
 

@@ -40,6 +40,17 @@
 }
 ```
 
+### Tool
+
+``` json
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "MOD_ID:items/ITEM"
+  }
+}
+```
+
 # Loot Table
 
 #### Basic

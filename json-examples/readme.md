@@ -1,4 +1,4 @@
-# Loot Tables
+# Models
 
 ### Item
 

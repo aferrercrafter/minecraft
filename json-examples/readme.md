@@ -1,4 +1,4 @@
-# Json Examples
+# Loot Tables
 
 ### Item
 
@@ -133,3 +133,64 @@
               "name": "MOD_ID:ITEM_NAME"
             },
 ```
+
+# Recipes
+
+#### Shaped Recipe
+
+``` json
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "xxx",
+    "xxx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "MOD_ID:ITEM"
+    }
+  },
+  "result":
+  {
+    "item": "MOD_ID:ITEM",
+    "count": 1
+  }
+}
+```
+
+#### Shapeless Recipe
+
+``` json
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "MOD_ID:ITEM"
+    }
+  ],
+  "result":
+  {
+    "item": "MOD_ID:ITEM",
+    "count": 1
+  }
+}
+```
+
+#### Smelting Recipe
+
+``` json
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "MOD_ID:ITEM"
+  },
+  "result": "MOD_ID:ITEM",
+  "experience": 0.0,
+  "cookingtime": 200
+}
+```
+

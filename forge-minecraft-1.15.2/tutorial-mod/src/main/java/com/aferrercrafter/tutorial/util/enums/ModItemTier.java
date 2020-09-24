@@ -1,6 +1,6 @@
-package com.aferrercrafter.tutorial.tools;
+package com.aferrercrafter.tutorial.util.enums;
 
-import com.aferrercrafter.tutorial.util.RegistryHandler;
+import com.aferrercrafter.tutorial.init.ModItems;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.crafting.Ingredient;
 
@@ -9,7 +9,7 @@ import java.util.function.Supplier;
 public enum ModItemTier implements IItemTier {
 
     RUBY(3, 800, 7.0f, 3.0f, 12, () -> {
-        return Ingredient.fromItems(RegistryHandler.RUBY.get());
+        return Ingredient.fromItems(ModItems.RUBY.get());
     });
 
     private final int harvestLevel;

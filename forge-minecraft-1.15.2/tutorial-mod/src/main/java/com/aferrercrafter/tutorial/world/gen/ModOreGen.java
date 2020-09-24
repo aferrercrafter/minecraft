@@ -1,7 +1,7 @@
 package com.aferrercrafter.tutorial.world.gen;
 
 import com.aferrercrafter.tutorial.Tutorial;
-import com.aferrercrafter.tutorial.util.RegistryHandler;
+import com.aferrercrafter.tutorial.init.ModBlocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.pattern.BlockMatcher;
@@ -28,13 +28,13 @@ public class ModOreGen {
 
             // Nether Generation
             if(biome.getCategory() == Biome.Category.NETHER){
-                GenOre(biome, 15, 5, 5, 80, OreFeatureConfig.FillerBlockType.NETHERRACK, RegistryHandler.RUBY_ORE.get().getDefaultState(), 3);
+                GenOre(biome, 15, 5, 5, 80, OreFeatureConfig.FillerBlockType.NETHERRACK, ModBlocks.RUBY_ORE.get().getDefaultState(), 3);
             // The End Generation
             } else if(biome.getCategory() == Biome.Category.THEEND) {
-                GenOre(biome, 15, 3, 5, 50, END_STONE, RegistryHandler.RUBY_ORE.get().getDefaultState(), 6);
+                GenOre(biome, 15, 3, 5, 50, END_STONE, ModBlocks.RUBY_ORE.get().getDefaultState(), 6);
             // World Generation
             } else {
-                GenOre(biome, 15, 8, 5, 50, OreFeatureConfig.FillerBlockType.NATURAL_STONE, RegistryHandler.RUBY_ORE.get().getDefaultState(), 6);
+                GenOre(biome, 15, 8, 5, 50, OreFeatureConfig.FillerBlockType.NATURAL_STONE, ModBlocks.RUBY_ORE.get().getDefaultState(), 6);
             }
         }
     }

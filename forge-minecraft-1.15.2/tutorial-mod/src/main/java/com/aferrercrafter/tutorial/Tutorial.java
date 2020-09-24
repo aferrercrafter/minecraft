@@ -1,6 +1,7 @@
 package com.aferrercrafter.tutorial;
 
-import com.aferrercrafter.tutorial.util.RegistryHandler;
+import com.aferrercrafter.tutorial.init.ModBlocks;
+import com.aferrercrafter.tutorial.init.ModItems;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
@@ -23,7 +24,8 @@ public class Tutorial
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
 
-        RegistryHandler.init();
+        ModItems.init();
+        ModBlocks.init();
 
         MinecraftForge.EVENT_BUS.register(this);
     }
@@ -40,7 +42,7 @@ public class Tutorial
     public static final ItemGroup CREATIVE_TAB = new ItemGroup("tutorialTab") {
         @Override
         public ItemStack createIcon() {
-            return new ItemStack(RegistryHandler.RUBY.get());
+            return new ItemStack(ModItems.RUBY.get());
         }
     };
 

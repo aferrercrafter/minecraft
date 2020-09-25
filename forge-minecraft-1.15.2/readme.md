@@ -6,3 +6,7 @@
 - IntelliJ https://www.jetbrains.com/idea/download/#section=windows
 - Forge http://files.minecraftforge.net/
     - Download MDK Recommended Version
+    
+ ##
+ 
+ $ gradle genIntellijRuns 
